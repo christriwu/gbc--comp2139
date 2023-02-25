@@ -22,7 +22,7 @@ namespace Assignment_1.Models
                     Email = "Seller1@gmail.ca",
                     UserType = "seller"
                 },
-                new User()
+                new User
                 {
                     UserId = 2,
                     Password = "password1",
@@ -40,7 +40,72 @@ namespace Assignment_1.Models
                     ClosingDate = DateTime.Now.AddDays(3),
                     Condition = "Used",
                     Category = "Shoes",
-                    Image = "~\\Images\\shoes.png"
+                    Image = "shoes.png"
+
+                },
+                new Item
+                {
+                    ItemId = 2,
+                    ItemName = "Nike",
+                    ItemDescription = "really really cool shoes",
+                    MinCost = 120.00,
+                    OpeningDate = DateTime.Now,
+                    ClosingDate = DateTime.Now.AddDays(3),
+                    Condition = "New",
+                    Category = "Shoes",
+                    Image = "nike.png"
+
+                },
+                new Item
+                {
+                    ItemId = 3,
+                    ItemName = "Spider-man Shoes",
+                    ItemDescription = "Cool Spider-man shoes",
+                    MinCost = 2000.00,
+                    OpeningDate = DateTime.Now,
+                    ClosingDate = DateTime.Now.AddDays(3),
+                    Condition = "New",
+                    Category = "Shoes",
+                    Image = "coolShoes.jpg"
+
+                }, 
+                new Item
+                {
+                    ItemId = 4,
+                    ItemName = "Bicycle",
+                    ItemDescription = "Bicycle",
+                    MinCost = 124.99,
+                    OpeningDate = DateTime.Now,
+                    ClosingDate = DateTime.Now.AddDays(3),
+                    Condition = "New",
+                    Category = "Sports",
+                    Image = "bicycle.jpg"
+
+                },
+                new Item
+                {
+                    ItemId = 5,
+                    ItemName = "Iphone 13",
+                    ItemDescription = "Iphone 13 128GB",
+                    MinCost = 1120.00,
+                    OpeningDate = DateTime.Now,
+                    ClosingDate = DateTime.Now.AddDays(3),
+                    Condition = "New",
+                    Category = "Phone",
+                    Image = "iPhone13.png"
+
+                },
+                new Item
+                {
+                    ItemId = 6,
+                    ItemName = "Samsung Galaxy 23",
+                    ItemDescription = "Samsung Galaxy 23 256GB",
+                    MinCost = 2000.00,
+                    OpeningDate = DateTime.Now,
+                    ClosingDate = DateTime.Now.AddDays(3),
+                    Condition = "New",
+                    Category = "Phone",
+                    Image = "samsung.png"
 
                 }
             );

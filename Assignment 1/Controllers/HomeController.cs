@@ -9,17 +9,17 @@ namespace Assignment_1.Controllers
         
         public IActionResult Index()
         {
-            ViewBid.
+           // ViewBid.
             return View();
         }
 
 
 
-        [HttpPost]
+/*        [HttpPost]
         public IActionResult Index(Item item)
         {
             if (ModelState.IsValid)
-            ViewBid
-        }
+            //ViewBid
+        }*/
     }
 }

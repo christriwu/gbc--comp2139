@@ -12,7 +12,7 @@ namespace Lab3.Models
         [Required(ErrorMessage = "Enter valid Last Name")]
          public string? LastName { get; set; }
          [Required(ErrorMessage = "Enter valid Phone number")]
-        public string? phone { get; set; }
+        public string? Phone { get; set; }
         [Required(ErrorMessage = "Enter valid Email")]
         public string? Email { get; set; }
          public string? Organization { get; set; }
