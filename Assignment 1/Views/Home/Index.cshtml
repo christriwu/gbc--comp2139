@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <div id="menu_top-border" class="mn-t-b" href="#tabindex=-1">
+
+    </div>
+</body>
+<div id="menu_bar-nav" class="menu_bar-nav" tabindex="-1">
+</div>
+<header id="head" class="head head-gw" role="banner">
+    <table class="menu_bar-tbl">
+        <tbody>
+            <tr>
+                <td class="menu_bar-td">
+                    <h1 id="menu_bar-h1">
+                        <a id="menu_bar-home" href="Index.cshtml">GBC Bids Group</a>
+                    </h1>
+                </td>
+                <td class="menu_bar-td-s">
+                    <form id="menu_bar-a" method="post" class="searchForm">
+                        <table class = "menu_bar-tbl2" role="presentation">
+                            <tbody>
+                                <tr>
+                                    <td class="menu_bar-td-s">
+                                        <div id="menu_bar-box">
+                                            <div id="menu_bar-box2">
+                                                <label class="menu_bar_sb-hdn" for="menu_bar-s">Enter your search keyword</label>
+                                                <input id="menu_bar-s" class="menu_bar-tb" type="text" aria-autocomplete="list" 
+                                                aria-expanded="false" size="50" maxlength="100" aria-label="Search products" placeholder="Search products"
+                                                autocapitalize="none">
+                                                <script>
+                                                    if(document.getElementById('menu_bar-s').value.length !== 0)
+                                                    {
+                                                        document.getElementById('menu_bar-box').classList.add('menu_bar-box-focus');
+                                                        document.getElementById('head').classList.add('menu_bar_s-focus');
+                                                    }
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="menu_bar-td menu_bar-s-btn">
+                                        <input id="menu_bar-btn" class="btn" type="submit" value="Search">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div id="menu_bar-top" class="menu_bar-top" role="navigation" aria-label="Account">
+        <tbody>
+            <tr>
+                <ul id="menu_bar-top_left">
+                    <li id="menu_bar-i" class="menu_bar-tab">
+                        <span id="menu_bar-new_guest" aria-expanded="false">
+                            Welcome!
+                            <a href="~/Home/Login.cshtml">Login</a>
+                            <span id="menu_bar-space">
+                                or
+                                <a></a>
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+                <ul id="menu_bar-top_right">
+                    <li id="menu_bar-sell" class="menu_bar_sell-opt">
+                        <a href="/Home/Sell">Sell</a>
+                    </li>
+                </ul>
+            </tr>
+        </tbody>
+    </div>
+</header>
+<div id="tabs" class="menu_tabs" style="display: block;">
+    <div class="menu_navigation">
+        <ul id="no_dot" class="menu_navigation_container">
+            <li class="menu_navigation_active">
+                <span>Home</span>
+            </li>
+            <li class="menu_navigation_auct">
+                <span>Products</span>
+            </li>
+        </ul>
+    </div>
+</div>
+</html>

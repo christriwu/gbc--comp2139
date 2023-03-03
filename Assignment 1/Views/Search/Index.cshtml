@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Item>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Items</h1>
+@*<partial name="_SearchSection"/>*@
+
+<div class="container container-sm">
+    <div class="row gy-5">
+        @foreach (var item in Model)
+        {
+
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="~/images/@item.Image" alt="@item.ItemDescription">
+                    <div class="card-body">
+                        <h5 class="card-title">@item.ItemName</h5>
+                        <p class="card-text">@item.ItemDescription</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Minimum Price: @item.MinCost.ToString()</li>
+                        <li class="list-group-item">Opening Date: @item.OpeningDate</li>
+                        <li class="list-group-item">Closing Date: @item.ClosingDate</li>
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+
+
+</div>

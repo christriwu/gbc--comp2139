@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Item>
+
+<div class="container">
+    <form class="form-control" asp-controller="Search" asp-action="_SearchSection" method="post">
+        <label for="search" class="form-label">Item Search</label>
+        <input type="text" id="search" />
+        <label for="categories">Category</label>
+        <select id="categories">
+            @foreach (var item in Model)
+            {
+                <option>@item.Category</option>
+            }
+        </select>
+
+    </form>
+</div>

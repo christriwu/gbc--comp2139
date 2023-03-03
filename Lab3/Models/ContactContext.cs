@@ -25,7 +25,7 @@ namespace Lab3.Models
                     ContactId = 1,
                     FirstName = "lsdh",
                     LastName = "sh",
-                    phone = "sdh",
+                    Phone = "sdh",
                     Email = "shdf",
                     CategoryId = 1,
                     DateAdded = DateTime.Now

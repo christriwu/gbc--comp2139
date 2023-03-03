@@ -16,18 +16,17 @@ namespace Assignment_1.Models
         [Required(ErrorMessage = "Enter valid Password")]
         [Compare("ConfirmPassword")]
         [StringLength(25, ErrorMessage = "Password is maximum 25 Characters")]
-        public string? Password { get; set; } = string.empty;
+        public string? Password { get; set; }
 
         [Required(ErrorMessage = "Please confirm your password.")]
-        [Display(Name = ConfirmPassword)]
         [NotMapped]
-        public string ConfirmPassword { get; set; } = string.empty;
+        public string? ConfirmPassword { get; set; } 
 
         
         [Required(ErrorMessage = "Enter valid Email")]
         [Remote("CheckEmail", "Validation")]
-        [Display(Name = "Emal Address")]
-        public string? Email { get; set; } = string.empty;
+        [Display(Name = "Email Address")]
+        public string? EmailAddress { get; set; } 
 
         [Required(ErrorMessage= "valid user type required")]
         public string? UserType { get; set; }

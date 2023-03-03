@@ -4,13 +4,13 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace Assignment_1.Models
 {
-    public class ItemContext : DbContext
+    public class ApplicationContext : DbContext
     {
-        public ItemContext(DbContextOptions<ItemContext> options) : base(options) { }
+        public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) { }
 
         //DbSets
-        public DbSet<User> User { get; set; }
-        public DbSet<Item> Item { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Item> Items { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -19,14 +19,14 @@ namespace Assignment_1.Models
                 {
                     UserId = 1,
                     Password = "Password",
-                    Email = "Seller1@gmail.ca",
+                    EmailAddress = "Seller1@gmail.ca",
                     UserType = "seller"
                 },
                 new User
                 {
                     UserId = 2,
                     Password = "password1",
-                    Email = "buyer1@gmail.ca",
+                    EmailAddress = "buyer1@gmail.ca",
                     UserType = "buyer"
                 }
             );
@@ -53,7 +53,7 @@ namespace Assignment_1.Models
                     ClosingDate = DateTime.Now.AddDays(3),
                     Condition = "New",
                     Category = "Shoes",
-                    Image = "nike.png"
+                    Image = "nike.jpg"
 
                 },
                 new Item
@@ -66,7 +66,7 @@ namespace Assignment_1.Models
                     ClosingDate = DateTime.Now.AddDays(3),
                     Condition = "New",
                     Category = "Shoes",
-                    Image = "coolShoes.jpg"
+                    Image = "spiderman.jpg"
 
                 }, 
                 new Item

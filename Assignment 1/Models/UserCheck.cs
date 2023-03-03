@@ -1,8 +1,8 @@
-namespace Registration.Models
+/*namespace Assignment_1.Models
 {
     public static class UserCheck
     {
-        public static string UserExists(RegistrationContext ctx, string users)
+        public static string UserExists(ApplicationContext ctx, string users)
         {
             string msg = string.Empty;
             if (!string.IsNullOrEmpty(users)) {
@@ -15,4 +15,4 @@ namespace Registration.Models
             return msg;
         }
     }
-}
+}*/

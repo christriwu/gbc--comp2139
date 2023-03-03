@@ -11,8 +11,8 @@ builder.Services.AddRouting(options =>
         options.LowercaseUrls = true;
     }
 );
-builder.Services.AddDbContext<ItemContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ItemContext")));
+builder.Services.AddDbContext<ApplicationContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ApplicationContext")));
 
 var app = builder.Build();
 
